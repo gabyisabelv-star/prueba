@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>High-Performance Ergo Chair - OfficePro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#4f3300",
+                        "on-surface": "#1a1c1e",
+                        "tertiary": "#331f00",
+                        "surface-container-low": "#f4f3f6",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#1b3a5c",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001c38",
+                        "surface-container-highest": "#e3e2e5",
+                        "inverse-on-surface": "#f1f0f3",
+                        "tertiary-fixed-dim": "#ecbf80",
+                        "outline": "#73777f",
+                        "on-surface-variant": "#43474e",
+                        "surface-container": "#eeedf1",
+                        "on-background": "#1a1c1e",
+                        "surface-dim": "#dad9dd",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d2e4ff",
+                        "on-error": "#ffffff",
+                        "background": "#faf9fc",
+                        "secondary-fixed": "#d3e3ff",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#abc9f2",
+                        "on-secondary-fixed": "#001c39",
+                        "surface-bright": "#faf9fc",
+                        "primary": "#002444",
+                        "tertiary-fixed": "#ffddb1",
+                        "on-primary-fixed-variant": "#2b486b",
+                        "surface-tint": "#436084",
+                        "on-primary-container": "#87a4cc",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c3c6cf",
+                        "surface-container-high": "#e9e8eb",
+                        "on-secondary-container": "#3c597f",
+                        "surface": "#faf9fc",
+                        "secondary-fixed-dim": "#abc8f4",
+                        "on-tertiary-fixed": "#291800",
+                        "surface-variant": "#e3e2e5",
+                        "on-tertiary-container": "#c49b5f",
+                        "secondary": "#436086",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5f410c",
+                        "on-secondary-fixed-variant": "#2a486d",
+                        "secondary-container": "#b3d1fd",
+                        "inverse-surface": "#2f3033",
+                        "inverse-primary": "#abc9f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "xs": "4px",
+                        "container-max": "1280px",
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "md": "24px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h2": ["Inter"],
+                        "h3": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "button": ["Inter"],
+                        "h1": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "button": ["15px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-slate-900 docked full-width top-0 sticky z-50 border-b border-[#E8E8E8] dark:border-slate-800 shadow-none">
+<div class="max-w-[1280px] mx-auto px-6 flex items-center justify-between h-20 w-full">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-black text-[#1B3A5C] dark:text-white tracking-tighter" href="#">OfficePro</a>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-['Inter'] text-sm tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-blue-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform px-3 py-2 rounded" href="#">Cleaning</a>
+<a class="font-['Inter'] text-sm tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-blue-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform px-3 py-2 rounded" href="#">Stationery</a>
+<a class="font-['Inter'] text-sm tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-blue-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform px-3 py-2 rounded" href="#">Paper</a>
+<a class="font-['Inter'] text-sm tracking-tight text-[#1B3A5C] dark:text-blue-400 font-bold border-b-2 border-[#1B3A5C] dark:border-blue-400 pb-1 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform px-3 pt-2" href="#">Furniture</a>
+<a class="font-['Inter'] text-sm tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-blue-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform px-3 py-2 rounded" href="#">Technology</a>
+<a class="font-['Inter'] text-sm tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-blue-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform px-3 py-2 rounded" href="#">Breakroom</a>
+</nav>
+<div class="flex items-center gap-4 text-[#1B3A5C] dark:text-blue-400">
+<button class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 scale-100 active:scale-95 transition-transform p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-gutter py-lg">
+<!-- Breadcrumbs -->
+<div class="mb-md font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Furniture</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Chairs</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-surface">High-Performance Ergo Chair</span>
+</div>
+<!-- Product Hero Section -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg mb-xl">
+<!-- Left Column: Imagery -->
+<div class="md:col-span-7 flex flex-col gap-base">
+<div class="w-full aspect-square bg-surface-container-lowest border border-outline-variant rounded flex items-center justify-center overflow-hidden">
+<img alt="Main Product Image" class="w-full h-full object-cover object-center" data-alt="A highly detailed studio shot of a modern, ergonomic office chair in a bright, minimalist setting. The chair features a breathable mesh back, adjustable lumbar support, and sleek aluminum framing. The lighting is soft and diffused, emphasizing the premium textures and high-end manufacturing quality. The background is a stark, clean white, aligning with a professional corporate e-commerce aesthetic. The overall mood is focused on productivity, comfort, and zero-friction design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBwoLl_8fcoSeg8heh_JWQ7EH-NBAk7OCKBLR5T0cIMUBMPY07nTyAgCRefNA_swb3xauzzeCa3S59Axya0_VYkrRf0jwYPMwhPFiIwlTtCiAsGp7J4q9L0ZjnKx6vuiaCJQsDlqD5cgqGggXdtjH0iaX0jIIquLoQ3M3vpxxotRvNtRcG0L54SlS44Mj-0R8Vaok4XqnIyUlrTfck5G4fM3Xk6DkMcETFqjjLh-AjorIcBaVyCf0j9vqrwmECGFphA7PBlw9OaKc"/>
+</div>
+<div class="grid grid-cols-4 gap-base">
+<div class="aspect-square bg-surface-container-lowest border-2 border-primary rounded cursor-pointer overflow-hidden">
+<img alt="Thumbnail 1" class="w-full h-full object-cover" data-alt="A close-up studio shot focusing on the headrest and upper back mesh material of a premium ergonomic office chair. The lighting is bright and clean, highlighting the woven texture of the dark grey mesh against a solid white background. The image reflects a minimalist, functional corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOVfuxqBK2MNFWslWaPecIda0GN2anVYOSAThBsk-zC2ED8UKnlbe-RGB_ohcJqGacAYSmoWbWYhcpSS1WLrnKLNXwLPPtsyXeLJuK-AWJv_OXIjaXnIcaA8jCyNpb6T1CHXMcMVVFZRGUbAi6y8JDrEl7djbmTz_NqkA9sDd9HWff6ryHOxmi2hJ7MCWSevUcllmgcFkGJNSV05OwgB6gNJH5z7rYR5EYbb1guuP0AcLx_kPi92h9JjoE4G6Py3eVBjxHd9LHMTE"/>
+</div>
+<div class="aspect-square bg-surface-container-lowest border border-outline-variant rounded hover:border-primary transition-colors cursor-pointer overflow-hidden">
+<img alt="Thumbnail 2" class="w-full h-full object-cover" data-alt="A detailed side-profile shot of a modern office chair showing the adjustable armrests and seat depth mechanism. The sleek silver aluminum base contrasts sharply with the dark grey fabric. Set against a pristine white studio background, the image conveys high-end corporate efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYrShUYENWIoReM_LjL9gWgAvrVaFpf1mtC8kxQ5UWNSyMoXRkI8Y_q4I11hELeTzvWDgfxHAVI6zjli6KHIq_CX6hZMqnMgXmLIOuXPvxce8kmjOGWtlssrOeOqSPPLKs7K0IaHbofnvJATpyW8BISaXThoFs4DVxrVe8gBnSNeaCvf3CjWD7YlIVo_-_qneh3uMe_cxCdk1ASh1rQX9DzsqKzyufvkI75o0ghKtnrDvEPfL4wmtavWislbin4pSwnSovGOA3VBw"/>
+</div>
+<div class="aspect-square bg-surface-container-lowest border border-outline-variant rounded hover:border-primary transition-colors cursor-pointer overflow-hidden">
+<img alt="Thumbnail 3" class="w-full h-full object-cover" data-alt="A macro studio photograph highlighting the polished aluminum caster wheels and base of an ergonomic desk chair. The bright, high-key lighting creates subtle reflections on the metal, emphasizing durability and premium build quality indicative of a modern corporate environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdCivklECFbvhCaEQRy6js2J8XKjZ6Emuin9BBJpbilcBca5K93YscOOaKs7CekFd_D8Ag1gEO8ap-wvc5T1IGkuyehgxCOBRzjEqysr5skKMMvokStY5vccGGkjS_z4qdu_22dBwFNJ9qSbW8dQeGb1Yceb5XBis-o_OK9-O3iM7kRx_Upa30Lu7DWTtOs1vS2xO-9_Ghz-BZsDT8ej5R9envTB3HT8dZvLPoGeJ7wFrOuGmEfEqvSFxBymUx8-qEwyGXjOXNRYE"/>
+</div>
+<div class="aspect-square bg-surface-container-lowest border border-outline-variant rounded hover:border-primary transition-colors cursor-pointer overflow-hidden">
+<img alt="Thumbnail 4" class="w-full h-full object-cover" data-alt="A back-angle studio shot of a high-performance ergonomic chair, showcasing the intricate webbed lumbar support system. The stark white background isolates the product, focusing attention on the functional, minimalist design language tailored for professional workspaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfWuRXYqAa-UsQRS4Bs92JW1iS-ArEmQSuQZeSfZp6HUGO7IDGc41I2PTiqfvMtEqMdxbHFxUC5bNZme-t1oDrTvZDZthXckiSYjyS7BnE91m85vFarPrf54tEIMYyEq5Vk9DNdP00vYNd3PqOXO0ROUB7FTT-DUB-adF6DPFF6Vx0KKRQFfpIEJRldVNHbDrDAp1xbjELRCQpSsovIbzN-xZdsc0EIW5HtruCHOkfKmvWojL9ezLOJc3I3jd2u6OT92U0lFTbJ_4"/>
+</div>
+</div>
+</div>
+<!-- Right Column: Details & Actions -->
+<div class="md:col-span-5 flex flex-col pt-md">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-xs">Herman Miller Alternative</span>
+<h1 class="font-h2 text-h2 text-on-surface mb-xs">High-Performance Ergo Chair</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-sm">SKU: OP-ERGO-992A</p>
+<div class="flex items-center gap-2 mb-md">
+<div class="flex text-[#F5A623]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary underline cursor-pointer">124 Reviews</span>
+</div>
+<div class="font-h1 text-h1 text-primary-container mb-lg">
+                    $249.99
+                </div>
+<div class="border-t border-outline-variant py-md mb-md">
+<label class="font-label-caps text-label-caps text-on-surface block mb-sm">Quantity</label>
+<div class="flex items-center border border-outline-variant rounded w-32 h-12 bg-surface-container-lowest">
+<button class="w-10 h-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<input class="w-12 text-center border-none focus:ring-0 font-body-md text-body-md text-on-surface bg-transparent p-0" type="text" value="1"/>
+<button class="w-10 h-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-sm mb-lg">
+<button class="w-full h-14 bg-primary-container text-white font-button text-button rounded hover:bg-on-primary-fixed-variant transition-colors flex items-center justify-center gap-2 shadow-sm">
+<span class="material-symbols-outlined">shopping_cart</span>
+                        Add to Cart
+                    </button>
+<button class="w-full h-14 border border-secondary text-secondary font-button text-button rounded hover:bg-surface-container transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">favorite</span>
+                        Add to Wishlist
+                    </button>
+</div>
+<div class="bg-surface-container-low p-md rounded flex flex-col gap-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<span class="font-body-sm text-body-sm text-on-surface">Free Next-Day Shipping on orders over $50</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface">10-Year Comprehensive Warranty</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Below Fold: Tabs -->
+<div class="border-t border-outline-variant pt-lg">
+<div class="flex gap-lg border-b border-outline-variant mb-lg">
+<button class="font-h3 text-h3 text-primary-container border-b-2 border-primary-container pb-sm px-2">Description</button>
+<button class="font-h3 text-h3 text-on-surface-variant hover:text-on-surface pb-sm px-2 transition-colors">Specifications</button>
+<button class="font-h3 text-h3 text-on-surface-variant hover:text-on-surface pb-sm px-2 transition-colors">Reviews (124)</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg max-w-[1000px]">
+<div class="md:col-span-2 flex flex-col gap-md">
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Engineered for the demands of the modern professional, the High-Performance Ergo Chair delivers unparalleled support during long hours of focused work. Utilizing a proprietary breathable mesh matrix, it regulates temperature while adapting to your unique spinal curvature.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        The intuitive adjustment suite allows for micro-tuning of seat depth, armrest height and pivot, and lumbar tension, ensuring a zero-friction seating experience that enhances productivity and reduces fatigue.
+                    </p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-md rounded">
+<h4 class="font-button text-button text-on-surface mb-sm">Key Features</h4>
+<ul class="flex flex-col gap-2">
+<li class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary mt-1">check</span>
+                            Dynamic Lumbar Support
+                        </li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary mt-1">check</span>
+                            4D Adjustable Armrests
+                        </li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary mt-1">check</span>
+                            Breathable K-Mesh Material
+                        </li>
+<li class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary mt-1">check</span>
+                            Weight Capacity: 350 lbs
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-950 full-width py-12 border-t border-[#E8E8E8] dark:border-slate-800 shadow-none mt-xl">
+<div class="max-w-[1280px] mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
+<div class="flex flex-col gap-4">
+<span class="text-lg font-bold text-[#1B3A5C] dark:text-white">OfficePro</span>
+<p class="font-['Inter'] text-xs leading-relaxed text-slate-500 dark:text-slate-400">© 2024 OfficePro Supplies. Professional Efficiency Guaranteed.</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-['Inter'] text-xs leading-relaxed text-slate-500 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-white hover:underline transition-all opacity-100 hover:opacity-80" href="#">About Us</a>
+<a class="font-['Inter'] text-xs leading-relaxed text-slate-500 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-white hover:underline transition-all opacity-100 hover:opacity-80" href="#">Quick Order</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-['Inter'] text-xs leading-relaxed text-slate-500 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-white hover:underline transition-all opacity-100 hover:opacity-80" href="#">Customer Service</a>
+<a class="font-['Inter'] text-xs leading-relaxed text-slate-500 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-white hover:underline transition-all opacity-100 hover:opacity-80" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-['Inter'] text-xs leading-relaxed text-slate-500 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-white hover:underline transition-all opacity-100 hover:opacity-80" href="#">Newsletter Signup</a>
+<a class="font-['Inter'] text-xs leading-relaxed text-slate-500 dark:text-slate-400 hover:text-[#1B3A5C] dark:hover:text-white hover:underline transition-all opacity-100 hover:opacity-80" href="#">Returns</a>
+</div>
+</div>
+</footer>
+</body></html>
